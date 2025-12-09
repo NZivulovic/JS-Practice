@@ -1,0 +1,102 @@
+/* 1 */
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+/* 1 */
+
+
+/* 2 */
+.scoreTotal{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    overflow:scroll;
+    text-align: center;  
+    /* border: 2px solid red; */
+}
+.scoreTotalResults{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    /* border: 2px solid red; */
+}
+
+
+
+.score{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    overflow:scroll;
+    text-align: center;  
+    /* border: 2px solid red; */
+}
+.whoWon{
+
+}
+
+
+.AIScore{
+
+}
+.playerScore{
+
+}
+
+/* 2 */
+
+
+/* 3 */
+.mainDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    overflow:scroll;
+    text-align: center;   
+    /* border: 2px solid red; */
+}
+.AISelection{
+    /* border: 2px solid blue; */
+}
+.playerSelection{
+    /* border: 2px solid blue; */
+}
+.AIImg{
+    width: 200px;
+    height: 150px;
+    padding-bottom: 2rem;
+}
+.playerImg{
+    width: 200px;
+    height: 150px;
+    padding-bottom: 2rem;
+}
+/* 3 */
+
+
+
+
+/* 4 */
+.selection{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    overflow:scroll;
+
+    /* border: 2px solid red; */
+}
+.selectorButton{
+    cursor: pointer;
+
+    margin: 2.5rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+/* 4 */
