@@ -1,0 +1,29 @@
+.divContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    outline: 2px solid lightsalmon;
+}
+
+.divRow {
+    display: flex;
+    outline: 2px solid lightsalmon;
+    min-height: 60px;
+    min-width: 60px;
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.divRow:hover {
+    background-color: #000000;
+}
+
+#changeGridSizeButton {
+    cursor: pointer;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+
+}
