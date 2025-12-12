@@ -1,83 +1,102 @@
-.body {
-    display: flex;
-}
 
-.containerCalculator {
+
+.containerCalculatorDiv {
     display: flex;
-    max-height: 600px;
-    max-width: 1000px;
+    max-height: fit-content;
+    max-width: fit-content;
     margin: 0 auto;
     margin-top: 10rem;
     flex-flow: column;
-    outline: 2px solid red;
+    outline: 5px solid black;
+    border-radius: 2%;
 }
 
-.calculatorHeader {
+
+
+.calculatorHeaderDiv {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex: 1;
-    outline: 2px solid purple;
-    min-height: 5rem;
-
+    max-width: 12.5rem;
+    overflow: hidden;
 }
 
-.calculatorTextDisplay {
-    margin: 0;
-    margin: auto 0;
+.calculatorNumbersFirstDisplayDiv {
+    display: flex;
+    flex: 1;
+    max-width: fit-content;
+    justify-content: center;
+    margin: 0 auto;
     margin-left: 1rem;
 }
 
 
-.calculatorButtons {
+
+
+.calculatorButtonsDiv {
     display: flex;
     flex: 1;
-    flex-flow: row;
-    flex-wrap: wrap;
-    min-height: 3rem;
-    outline: 2px solid blue;
+    max-width: fit-content;
+    outline: 2px solid gray;
     gap: 0.5rem;
     padding: 1rem 1rem;
+
 }
 
-.calculatorButtonAdd {
+
+
+.calculatorButtonsNumbersDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 0.5rem;
+    row-gap: 0.3rem;
+    cursor: default;
+
+}
+
+.calculatorButtonNumber {
+    cursor: pointer;
+}
+.calculatorButtonNumber0Div{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.calculatorButtonsOperatorsDiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 0.2rem;
+}
+
+.calculatorButtonOperator {
     min-width: 5rem;
     max-height: 3rem;
     cursor: pointer;
+    flex-flow: column;
 }
 
-.calculatorButtonSubtract {
+.calculatorButtonOperatorClear {
     min-width: 5rem;
     max-height: 3rem;
+    margin-top: 2rem;
     cursor: pointer;
+    flex-flow: column;
 }
 
-.calculatorButtonMultiply {
-    min-width: 5rem;
-    max-height: 3rem;
-    cursor: pointer;
-}
-
-.calculatorButtonDivide {
-    min-width: 5rem;
-    max-height: 3rem;
-    cursor: pointer;
-}
-
-
-.calculatorButtonClear {
-    min-width: 5rem;
-    max-height: 3rem;
-    margin-left: auto;
-    cursor: pointer;
-}
-
-.calculatorButtonClear:hover {
+.calculatorButtonOperatorClear:hover {
     background-color: rgb(255, 83, 83);
+    border-radius: 5px;
 }
 
-.calculatorButtonEqual {
+.calculatorButtonOperatorEqual {
     min-width: 5rem;
     max-height: 3rem;
-    margin-left: auto;
+    margin-top: 1rem;
     cursor: pointer;
+    justify-content: space-around;
 }
