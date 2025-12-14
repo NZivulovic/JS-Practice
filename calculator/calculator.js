@@ -71,7 +71,7 @@ equalButton.addEventListener('click', () => {
             const num1 = Number(enteredNum1)
             const num2 = Number(enteredNum2)
             if (enteredOperator === '+') {
-                calculation = num1 + num2;F
+                calculation = num1 + num2;
             }
             if (enteredOperator === '-') {
                 calculation = num1 - num2;
