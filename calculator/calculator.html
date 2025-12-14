@@ -12,8 +12,17 @@
 <body>
     <div class="containerCalculatorDiv">
         <div class="calculatorHeaderDiv">
-            <div class="calculatorNumbersFirstDisplayDiv">
-                <h2>>_</h2>
+            <div class="calculatorNumbersArrowDisplayDiv">
+                <h2>></h2>
+            </div>
+            <div class="calculatorNumbersDisplayDiv">
+                <h2 id="number1Element"></h2>
+            </div>
+            <div class="calculatorNumbersDisplayDiv">
+                <h2 id="operatorElement"></h2>
+            </div>
+            <div class="calculatorNumbersDisplayDiv">
+                <h2 id="number2Element"></h2>
             </div>
         </div>
         <div class="calculatorButtonsDiv">
@@ -41,10 +50,10 @@
                 </div>
             </div>
             <div class="calculatorButtonsOperatorsDiv">
-                <button id="add" class="calculatorButtonOperator">+</button>
-                <button id="subtract" class="calculatorButtonOperator">-</button>
-                <button id="multiply" class="calculatorButtonOperator">x</button>
-                <button id="divide" class="calculatorButtonOperator">/</button>
+                <button id="+" class="calculatorButtonOperator">+</button>
+                <button id="-" class="calculatorButtonOperator">-</button>
+                <button id="x" class="calculatorButtonOperator">x</button>
+                <button id="/" class="calculatorButtonOperator">/</button>
                 <button id="clear" class="calculatorButtonOperatorClear">Clear</button>
                 <button id="equal" class="calculatorButtonOperatorEqual">=</button>
             </div>
