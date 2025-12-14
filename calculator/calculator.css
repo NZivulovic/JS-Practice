@@ -1,5 +1,3 @@
-
-
 .containerCalculatorDiv {
     display: flex;
     max-height: fit-content;
@@ -21,13 +19,22 @@
     overflow: hidden;
 }
 
-.calculatorNumbersFirstDisplayDiv {
+.calculatorNumbersArrowDisplayDiv {
+    display: flex;
+    flex: 1;
+    max-width: fit-content;
+    justify-content: center;
+    margin: 0 0;
+    margin-left: 1rem;
+}
+
+.calculatorNumbersDisplayDiv {
     display: flex;
     flex: 1;
     max-width: fit-content;
     justify-content: center;
     margin: 0 auto;
-    margin-left: 1rem;
+
 }
 
 
@@ -58,7 +65,8 @@
 .calculatorButtonNumber {
     cursor: pointer;
 }
-.calculatorButtonNumber0Div{
+
+.calculatorButtonNumber0Div {
     display: flex;
     justify-content: center;
 }
