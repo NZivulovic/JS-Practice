@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="library.css">
+    <script src="library.js" defer></script>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="formHeaderDiv">
+            <button class="addBookButton">Add New Book</button>
+            <dialog class="formDialog">
+                <form id="theForm" action="">
+                    <div class="formDiv">
+                        <label for="">Book: </label>
+                        <input id="bookName" type="text" formmethod="post">
+                    </div>
+                    <div class="formDiv">
+                        <label for="">Author: </label>
+                        <input id="bookAuthor" type="text" formmethod="post">
+                    </div>
+                    <div class="formDiv">
+                        <label for="">Page Count: </label>
+                        <input id="bookPageCount" type="text" formmethod="post">
+                    </div>
+                    <div class="formDiv">
+                        <button value="cancel" formmethod="dialog" id="cancelFormButton"
+                            class="dialogButtons">Cancel</button>
+                        <button value="confirm" id="confirmFormButton" class="dialogButtons">Confirm</button>
+                    </div>
+                </form>
+            </dialog>
+            <output></output>
+        </div>
+    </div>
+</body>
+
+</html>

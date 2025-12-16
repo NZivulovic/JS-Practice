@@ -1,0 +1,40 @@
+.mainDiv {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 10vw;
+    outline: 2px solid black;
+
+
+    flex-wrap: wrap;
+}
+
+.formHeaderDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.formDialog {
+    border-radius: 10px;
+}
+
+
+.addBookButton {
+    cursor: pointer;
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding-top: 2%;
+}
+
+.dialogButtons {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
