@@ -1,19 +1,21 @@
 .mainDiv {
     display: flex;
     flex-flow: column;
-    margin: 0 auto;
-    justify-content: center;
-    margin-top: 10vw;
+
+
+    margin-top: 1rem;
     outline: 2px solid black;
 
 
-    flex-wrap: wrap;
+
 }
 
 .formHeaderDiv {
     display: flex;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    max-height: fit-content;
 }
 
 .formDialog {
@@ -23,6 +25,7 @@
 
 .addBookButton {
     cursor: pointer;
+    padding: 1rem;
 }
 
 .formDiv {
@@ -30,6 +33,8 @@
     justify-content: center;
     flex-flow: wrap;
     padding-top: 2%;
+    justify-content: start;
+    padding: 2rem;
 }
 
 .dialogButtons {
@@ -37,4 +42,44 @@
     display: flex;
     justify-content: center;
     flex-flow: wrap;
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#confirmFormButton {
+    margin-left: 3rem;
+}
+
+#myLibraryNameDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+.myLibrary {
+    display: inline-grid;
+    border-top: 2px solid black;
+
+    grid-template-columns: repeat(auto-fill, 33vw);
+
+    text-align: center;
+    justify-content: center;
+    max-height: fit-content;
+}
+
+.bookItems {
+    margin: 1rem;
+    border: 2px solid black;
+    max-height: fit-content;
+    overflow: auto;
+
+}
+
+#deleteButton {
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
 }

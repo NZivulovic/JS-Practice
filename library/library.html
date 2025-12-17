@@ -14,27 +14,34 @@
         <div class="formHeaderDiv">
             <button class="addBookButton">Add New Book</button>
             <dialog class="formDialog">
-                <form id="theForm" action="">
+                <form id="theForm" method="dialog">
                     <div class="formDiv">
                         <label for="">Book: </label>
-                        <input id="bookName" type="text" formmethod="post">
+                        <input id="bookName" type="text">
                     </div>
                     <div class="formDiv">
                         <label for="">Author: </label>
-                        <input id="bookAuthor" type="text" formmethod="post">
+                        <input id="bookAuthor" type="text">
                     </div>
                     <div class="formDiv">
                         <label for="">Page Count: </label>
-                        <input id="bookPageCount" type="text" formmethod="post">
+                        <input id="bookPageCount" type="text">
                     </div>
                     <div class="formDiv">
-                        <button value="cancel" formmethod="dialog" id="cancelFormButton"
+                        <button value="cancel" type="reset" formmethod="dialog" id="cancelFormButton"
                             class="dialogButtons">Cancel</button>
-                        <button value="confirm" id="confirmFormButton" class="dialogButtons">Confirm</button>
+                        <button value="confirm" type="submit" id="confirmFormButton"
+                            class="dialogButtons">Confirm</button>
                     </div>
                 </form>
             </dialog>
             <output></output>
+        </div>
+        <div id="myLibraryNameDiv">
+            <h2>My Library:</h2>
+        </div>
+        <div class="myLibrary">
+
         </div>
     </div>
 </body>

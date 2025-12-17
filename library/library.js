@@ -1,8 +1,8 @@
 const myLibrary = [];
 
 formOutput = document.querySelector("output");
-formDialog = document.querySelector(".formDialog");
 
+formDialog = document.querySelector(".formDialog");
 theForm = document.querySelector("#theForm");
 
 bookName = document.querySelector("#bookName");
@@ -11,34 +11,74 @@ bookPageCount = document.querySelector("#bookPageCount");
 
 
 newBookButton = document.querySelector(".addBookButton");
-newBookButton.addEventListener("click", (event) => {
+newBookButton.addEventListener("click", () => {
     formDialog.showModal();
 })
 
 
 cancelFormButton = document.querySelector("#cancelFormButton");
-cancelFormButton.addEventListener("click", (event) => {
+cancelFormButton.addEventListener("click", () => {
     formDialog.close();
+    theForm.reset();
 })
+
+
+let name = ''
+let author = ''
+let pageCount = ''
+let id = ''
 
 confirmFormButton = document.querySelector("#confirmFormButton");
-confirmFormButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    theForm.submit();
+confirmFormButton.addEventListener("click", () => {
+
+    name = bookName.value
+    author = bookAuthor.value
+    pageCount = bookPageCount.value
+    id = crypto.randomUUID()
+
+    Book(name, author, pageCount, id);
+
+    formDialog.close();
+    theForm.reset();
 })
 
-function Book() {
-    this.name = bookName.value
-    this.author = bookAuthor.value
-    this.pageCount = bookPageCount.returnValue
-    this.id = crypto.randomUUID()
+function Book(name, author, pageCount, id) {
+    this.name = name
+    this.author = author
+    this.pageCount = pageCount
+    this.id = id
+    addBookToLibrary();
 }
 
-Object.getPrototypeOf(Book, addBookToLibrary);
-
+myLibraryDiv = document.querySelector(".myLibrary")
 function addBookToLibrary() {
+    Object.getPrototypeOf(Book)
+
+    myLibraryContainer = myLibraryDiv
+    bookContainer = document.createElement('div')
     bookInfo = document.createElement('p')
-    bookInfo.innerText = `${this.name}, ${this.author}, ${this.pageCount}, ${this.id}`
-    document.body.appendChild(bookInfo);
+    readCheckbox = document.createElement('input')
+    readCheckboxLabel = document.createElement('label')
+    deleteButton = document.createElement('button')
+
+    bookContainer.setAttribute('id', `${this.id}`)
+
+    deleteButton.setAttribute('data-parentID', `${this.id}`)
+
+    deleteButton.setAttribute("id", 'deleteButton')
+
+    bookContainer.setAttribute('class', 'bookItems')
+
+    readCheckbox.setAttribute('type', 'checkbox')
+
+    readCheckboxLabel.innerText = "Finished "
+    deleteButton.innerText = "Delete"
+    bookInfo.innerText = `Name: ${this.name}\n Author: ${this.author}\n Page Count: ${this.pageCount}\n ID: ${this.id}`
+
+    myLibraryDiv.appendChild(bookContainer);
+
+    bookContainer.appendChild(bookInfo);
+    bookContainer.appendChild(readCheckboxLabel);
+    bookContainer.appendChild(readCheckbox);
+    bookContainer.appendChild(deleteButton);
 }
-console.log(addBookToLibrary())
