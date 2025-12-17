@@ -1,8 +1,14 @@
 # JS-Practice | Projects
 ###
+  - [Library](#library)
   - [Calculator](#calculator)
   - [Etch-A-Sketch](#etch-a-sketch)
   - [Rock-Paper-Scissors](#rock-paper-scissors)
+## Library
+https://nzivulovic.github.io/JS-Practice/library/library.html
+
+<img width="2560" height="1307" alt="Screenshot 2025-12-17 at 19-50-01 library" src="https://github.com/user-attachments/assets/9449154f-3645-4133-8014-27e34c423c7e" />
+
 ## Calculator
 https://nzivulovic.github.io/JS-Practice/calculator/calculator.html
 
