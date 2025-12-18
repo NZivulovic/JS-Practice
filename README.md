@@ -7,7 +7,7 @@
 ## Library
 https://nzivulovic.github.io/JS-Practice/library/library.html
 
-<img width="2560" height="1307" alt="Screenshot 2025-12-17 at 19-50-01 library" src="https://github.com/user-attachments/assets/9449154f-3645-4133-8014-27e34c423c7e" />
+<img width="2560" height="1307" alt="Screenshot 2025-12-18 at 09-37-17 library" src="https://github.com/user-attachments/assets/f7c3f793-bcf5-425b-a2b7-957e146b6640" />
 
 ## Calculator
 https://nzivulovic.github.io/JS-Practice/calculator/calculator.html

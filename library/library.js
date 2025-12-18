@@ -18,8 +18,9 @@ newBookButton.addEventListener("click", () => {
 
 cancelFormButton = document.querySelector("#cancelFormButton");
 cancelFormButton.addEventListener("click", () => {
-    formDialog.close();
     theForm.reset();
+    formDialog.close();
+    
 })
 
 
@@ -36,10 +37,11 @@ confirmFormButton.addEventListener("click", () => {
     pageCount = bookPageCount.value
     id = crypto.randomUUID()
 
-    Book(name, author, pageCount, id);
-
-    formDialog.close();
-    theForm.reset();
+    if ((name !== '' && author !== '' && pageCount !== '')) {
+        Book(name, author, pageCount, id);
+        theForm.reset();
+        theForm.submit();
+    }
 })
 
 function Book(name, author, pageCount, id) {
@@ -62,11 +64,9 @@ function addBookToLibrary() {
     deleteButton = document.createElement('button')
 
     bookContainer.setAttribute('id', `${this.id}`)
+    deleteButton.setAttribute('id', `${this.id}`)
 
-    deleteButton.setAttribute('data-parentID', `${this.id}`)
-
-    deleteButton.setAttribute("id", 'deleteButton')
-
+    deleteButton.setAttribute("class", 'delete-btn')
     bookContainer.setAttribute('class', 'bookItems')
 
     readCheckbox.setAttribute('type', 'checkbox')
@@ -82,3 +82,15 @@ function addBookToLibrary() {
     bookContainer.appendChild(readCheckbox);
     bookContainer.appendChild(deleteButton);
 }
+
+myLibraryDiv.addEventListener('click', (e) => {
+    if (e.target.classList.contains("delete-btn")) {
+        const parentID = e.target.id;
+        console.log("Deleted item with ID: " + parentID);
+
+        const bookToRemove = document.getElementById(parentID);
+        if (bookToRemove) {
+            bookToRemove.remove();
+        }
+    }
+});
