@@ -36,10 +36,17 @@ confirmFormButton.addEventListener("click", () => {
     pageCount = bookPageCount.value
     id = crypto.randomUUID()
 
-    Book(name, author, pageCount, id);
+    if ((name !== '' && author !== '' && pageCount !== '')) {
+        Book(name, author, pageCount, id);
+        theForm.reset();
+        theForm.submit();
+    }
+    else {
+        theForm.reset();
+        theForm.close();
+    }
 
-    formDialog.close();
-    theForm.reset();
+
 })
 
 function Book(name, author, pageCount, id) {
@@ -85,7 +92,7 @@ myLibraryDiv.addEventListener('click', (e) => {
     if (e.target.classList.contains("delete-btn")) {
         const parentID = e.target.id;
         console.log("Deleted item with ID: " + parentID);
-        
+
         const bookToRemove = document.getElementById(parentID);
         if (bookToRemove) {
             bookToRemove.remove();
