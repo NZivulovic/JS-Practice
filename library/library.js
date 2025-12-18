@@ -18,8 +18,9 @@ newBookButton.addEventListener("click", () => {
 
 cancelFormButton = document.querySelector("#cancelFormButton");
 cancelFormButton.addEventListener("click", () => {
-    formDialog.close();
     theForm.reset();
+    formDialog.close();
+    
 })
 
 
@@ -41,12 +42,6 @@ confirmFormButton.addEventListener("click", () => {
         theForm.reset();
         theForm.submit();
     }
-    else {
-        theForm.reset();
-        theForm.close();
-    }
-
-
 })
 
 function Book(name, author, pageCount, id) {
