@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" type="text/css" href="tic-tac-toe.css">
+    </link>
+    <script src="tic-tac-toe.js" defer></script>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="startGameDiv">
+            <button class="startGameButton">Start Game</button>
+            <button class="resetGameButton">Reset Game</button>
+        </div>
+        <div class="beforeNameWrap">
+            <div class="playerNameInput">
+                <div>
+                    <label for="" class="playerInputLabel">Player X: </label>
+                    <input type="text" id="playerInput1" class="playerInput" placeholder="name..">
+                    <button id="submit1" class="playerSubmitButton" value="1">Submit</button>
+                </div>
+                <div>
+                    <label for="" class="playerInputLabel">Player O: </label>
+                    <input type="text" id="playerInput2" class="playerInput" placeholder="name..">
+                    <button id="submit2" class="playerSubmitButton" value="2">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="afterNameWrap">
+            <div>
+                <div>
+                    <h2 id="player1Text">Player X: </h2>
+                </div>
+                <div>
+                    <h2 id="player2Text">Player O: </h2>
+                </div>
+            </div>
+            <div class="scoreDiv">
+                <div>
+                    <h2 id="resultDisplay"> </h2>
+                </div>
+            </div>
+            <div class="userUIDiv">
+                <div class="rows">
+                    <div class="gridBox" id="0">
+
+                    </div>
+                    <div class="gridBox" id="1">
+
+                    </div>
+                    <div class="gridBox" id="2">
+
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="gridBox" id="3">
+
+                    </div>
+                    <div class="gridBox" id="4">
+
+                    </div>
+                    <div class="gridBox" id="5">
+
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="gridBox" id="6">
+
+                    </div>
+                    <div class="gridBox" id="7">
+
+                    </div>
+                    <div class="gridBox" id="8">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
