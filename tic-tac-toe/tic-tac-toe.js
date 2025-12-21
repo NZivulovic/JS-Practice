@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-// 1. store gameboard as array, inside gameboard object
-// 2. players also stored in objects
-// 3. object to control the flow of the game
-// 4. check for all winning 3-in-a-rows and ties.
-// 5. object that will handle the display/DOM logic.
-// 6. players click on a board square to place their marker, X and O automatic switch
-// 7. start/restart the game button
-// 8. display element for result
-
-
-
-// 1. The Game Board Module
-=======
->>>>>>> tic-tac-toe
 const gameBoard = (() => {
     const board = ['', '', '', '', '', '', '', '', ''];
 
@@ -22,13 +7,6 @@ const gameBoard = (() => {
         if (index > board.length || board[index] !== '') return;
         board[index] = sign;
     };
-<<<<<<< HEAD
-
-    return { getBoard, setField };
-})();
-
-// 2. Player Factory
-=======
     const reset = () => {
         for (let i = 0; i < board.length; i++) {
             board[i] = '';
@@ -39,16 +17,11 @@ const gameBoard = (() => {
 })();
 
 
->>>>>>> tic-tac-toe
 const Player = (name, sign) => {
     return { name, sign };
 };
 
-<<<<<<< HEAD
-// 3. Game Controller (Handles the "glue" logic)
-=======
 
->>>>>>> tic-tac-toe
 const displayController = (() => {
     const playerXInput = document.getElementById("playerInput1");
     const playerOInput = document.getElementById("playerInput2");
@@ -65,12 +38,6 @@ const displayController = (() => {
         beforeNameWrap.style.display = 'flex';
     })
 
-<<<<<<< HEAD
-    resetGameButton.addEventListener('click', () => {
-        reset.resetGame();
-    })
-=======
->>>>>>> tic-tac-toe
 
 
     let playerX;
@@ -80,11 +47,7 @@ const displayController = (() => {
     let gameOver = false;
 
     submitBtn1.addEventListener('click', () => {
-<<<<<<< HEAD
-        // Create players when the button is clicked
-=======
 
->>>>>>> tic-tac-toe
         playerX = Player(playerXInput.value, "X");
         document.getElementById("player1Text").innerText = `Player X: ${playerX.name}`;
         playerXInput.value = '';
@@ -94,11 +57,7 @@ const displayController = (() => {
         }
     });
     submitBtn2.addEventListener('click', () => {
-<<<<<<< HEAD
-        // Create players when the button is clicked
-=======
-        
->>>>>>> tic-tac-toe
+
         playerO = Player(playerOInput.value, "O");
         document.getElementById("player2Text").innerText = `Player O: ${playerO.name}`;
         playerOInput.value = '';
@@ -134,15 +93,9 @@ const displayController = (() => {
             const result = checkForWin.checkWin();
 
             if (result === 'win') {
-<<<<<<< HEAD
-                const winner = playCheck ? "X" : "O"; // Because playCheck already toggled
+                const winner = playCheck ? "X" : "O";
                 document.getElementById("resultDisplay").innerText = `Player ${winner} Wins!`;
-                // Add logic here to stop the game (e.g., remove event listeners)
-=======
-                const winner = playCheck ? "X" : "O"; 
-                document.getElementById("resultDisplay").innerText = `Player ${winner} Wins!`;
-                
->>>>>>> tic-tac-toe
+
                 gameOver = true;
 
             }
@@ -154,12 +107,6 @@ const displayController = (() => {
     });
 
 
-<<<<<<< HEAD
-})();
-
-const checkForWin = (() => {
-    // Array of all 8 winning combinations (index positions)
-=======
     const resetGame = () => {
         playCheck = false;
         gameOver = false;
@@ -189,7 +136,6 @@ const checkForWin = (() => {
 
 const checkForWin = (() => {
 
->>>>>>> tic-tac-toe
     const winningConditions = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
         [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
@@ -199,16 +145,9 @@ const checkForWin = (() => {
     const checkWin = () => {
         const board = gameBoard.getBoard();
 
-<<<<<<< HEAD
-        // 1. Check for a Winner
-        // We use .some() to see if any winning condition is met
-        const isWin = winningConditions.some(combination => {
-            // Check if all three indices in a combination have the same sign (and aren't empty)
-=======
 
         const isWin = winningConditions.some(combination => {
 
->>>>>>> tic-tac-toe
             return combination.every(index => {
                 return board[index] !== '' && board[index] === board[combination[0]];
             });
@@ -218,35 +157,13 @@ const checkForWin = (() => {
             return "win";
         }
 
-<<<<<<< HEAD
-        // 2. Check for a Tie
-        // If there is no win but all squares are filled
-=======
 
->>>>>>> tic-tac-toe
         if (!board.includes('')) {
             return "tie";
         }
 
-<<<<<<< HEAD
-        return null; // Game continues
-=======
-        return null; 
->>>>>>> tic-tac-toe
+        return null;
     };
 
     return { checkWin };
 })();
-<<<<<<< HEAD
-
-const reset = (() => {
-
-    const resetGame = () => {
-
-        delete (document.body.getElementsByClassName('gridText'));
-
-    }
-    return { resetGame };
-})();
-=======
->>>>>>> tic-tac-toe
