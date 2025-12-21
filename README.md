@@ -1,9 +1,15 @@
 # JS-Practice | Projects
 ###
+  - [Tic-Tac-Toe](#tic-tac-toe)
   - [Library](#library)
   - [Calculator](#calculator)
   - [Etch-A-Sketch](#etch-a-sketch)
   - [Rock-Paper-Scissors](#rock-paper-scissors)
+## Tic-Tac-Toe
+https://nzivulovic.github.io/JS-Practice//tic-tac-toe/tic-tac-toe.html
+
+<img width="2559" height="1306" alt="Screenshot 2025-12-20 at 19-48-39 tic-tac-toe" src="https://github.com/user-attachments/assets/eeeefeb6-fbd3-4b61-861d-638cb3141725" />
+
 ## Library
 https://nzivulovic.github.io/JS-Practice/library/library.html
 
